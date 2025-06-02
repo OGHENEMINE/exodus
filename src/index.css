@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Copperplate";
+  src: url("/copperplate-cc.bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@theme {
+  --font-primary: "Copperplate", "serif";
+}
