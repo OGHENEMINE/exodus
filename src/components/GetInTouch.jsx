@@ -50,9 +50,12 @@ const GetInTouch = () => {
                 d="M2.25 6.75A2.25 2.25 0 014.5 4.5h2.249a1.5 1.5 0 011.415 1.012l.766 2.298a1.5 1.5 0 01-.34 1.57l-.835.835a16.016 16.016 0 006.242 6.242l.835-.835a1.5 1.5 0 011.57-.34l2.298.766A1.5 1.5 0 0119.5 17.25V19.5a2.25 2.25 0 01-2.25 2.25H18a15.75 15.75 0 01-15.75-15.75v0z"
               />
             </svg>
-            <p class="transition-all duration-300 ease-in-out hover:text-gray-300">
+            <a
+              href="tel:+2347016623126"
+              class="transition-all duration-300 ease-in-out hover:underline hover:text-gray-300"
+            >
               +234 701 662 3126
-            </p>
+            </a>
           </div>
 
           <span className="max-sm:hidden">&bull;</span>
