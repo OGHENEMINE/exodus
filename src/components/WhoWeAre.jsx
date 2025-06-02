@@ -32,7 +32,7 @@ const WhoWeAre = () => {
           <img
             src="/who-we-are.jpg"
             alt="A collage of runway models and brand logos"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-top"
           />
         </motion.div>
 

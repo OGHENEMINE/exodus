@@ -61,7 +61,7 @@ const Header = () => {
 
         {/* Image Block */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 25 }}
           animate={{
             opacity: 1,
             x: 0,

@@ -55,7 +55,7 @@ const GetInTouch = () => {
             </p>
           </div>
 
-          <span>&bull;</span>
+          <span className="max-sm:hidden">&bull;</span>
 
           {/* Instagram */}
           <div class="flex items-center gap-2">

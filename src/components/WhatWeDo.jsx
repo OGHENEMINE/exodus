@@ -84,7 +84,7 @@ const WhatWeDo = () => {
       <div className="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-20">
         {/* Image Block */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
+          initial={{ opacity: 0, x: -25 }}
           whileInView={{
             opacity: 1,
             x: 0,
