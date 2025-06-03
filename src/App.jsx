@@ -11,7 +11,7 @@ const App = () => {
     <div className="overflow-hidden w-full max-w-6xl mx-auto px-5 min-h-screen grid grid-rows-[auto_1fr_auto]">
       <Header />
       {/* Main */}
-      <main class="mt-24 space-y-20">
+      <main className="mt-24 space-y-20">
         <WhoWeAre />
         <OurVision />
         <WhatWeDo />

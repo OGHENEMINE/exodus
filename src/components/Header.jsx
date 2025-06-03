@@ -1,37 +1,37 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import { motion } from "motion/react";
+
 const Header = () => {
   return (
-    //   Header
-    <header className="relative pt-6">
+    <header className="relative pt-6" role="banner">
       {/* Navigation */}
-      <nav className="flex justify-between items-center mb-10">
+      <nav className="flex justify-between items-center mb-10" aria-label="Main navigation">
         {/* Logo */}
         <div className="w-32">
-          <img
-            src="/logo.png"
-            alt="Expose logo"
-            className="w-full object-contain"
-          />
+          <a href="/" aria-label="Homepage">
+            <img
+              src="/logo.png"
+              alt="Expose — African Talent Platform logo"
+              className="w-full object-contain"
+            />
+          </a>
         </div>
-
-        {/* Optional Nav Links */}
-        {/*       <div className="space-x-6 text-sm hidden md:flex font-bold">
-            <a href="#" className="hover:underline">Discover</a>
-            <a href="#" className="hover:underline">Book Models</a>
-          </div>  */}
       </nav>
 
-      {/*  Hero Section */}
-      <section className="flex flex-col-reverse lg:flex-row items-center gap-10">
+      {/* Hero Section */}
+      <section
+        className="flex flex-col-reverse lg:flex-row items-center gap-10"
+        aria-labelledby="hero-heading"
+      >
         {/* Text Block */}
         <div className="lg:w-2/3">
           <motion.h1
+            id="hero-heading"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{
               opacity: 1,
               y: 0,
-              transition: { duration: 0.4, delay: 0.6},
+              transition: { duration: 0.4, delay: 0.6 },
             }}
             className="hero-text font-primary text-4xl md:text-5xl font-bold leading-tight mb-4"
           >
@@ -50,10 +50,18 @@ const Header = () => {
             African talent at the center of the industry.
           </motion.p>
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-x-5 mt-6">
-            <button className="cursor-pointer uppercase inline-block w-full sm:w-auto text-center px-8 py-4 border border-black text-base font-medium hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition">
+            <button
+              type="button"
+              className="cursor-pointer uppercase inline-block w-full sm:w-auto text-center px-8 py-4 border border-black text-base font-medium hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition"
+              aria-label="Browse available talent"
+            >
               Discover Talent
             </button>
-            <button className="cursor-pointer uppercase inline-block w-full sm:w-auto text-center px-8 py-4 border font-medium border-black text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition">
+            <button
+              type="button"
+              className="cursor-pointer uppercase inline-block w-full sm:w-auto text-center px-8 py-4 border font-medium border-black text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition"
+              aria-label="Apply to become a model"
+            >
               Join as a Model
             </button>
           </div>
@@ -73,7 +81,7 @@ const Header = () => {
         >
           <img
             src="/image.jpg"
-            alt="A collage of black models"
+            alt="Collage showcasing diverse African models"
             className="absolute inset-0 w-full h-full object-top"
           />
         </motion.div>

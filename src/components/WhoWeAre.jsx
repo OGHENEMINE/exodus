@@ -1,11 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
+
 const WhoWeAre = () => {
   return (
-    <section>
+    <section aria-labelledby="who-we-are-heading" className="py-16">
       {/* Section Header */}
       <div className="text-center mb-16">
         <motion.h2
+          id="who-we-are-heading"
           initial={{ opacity: 0, skewX: 20 }}
           whileInView={{
             opacity: 1,
@@ -21,7 +23,7 @@ const WhoWeAre = () => {
         </p>
       </div>
 
-      {/* who we are: content */}
+      {/* Content Block */}
       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
         {/* Image Block */}
         <motion.div
@@ -31,7 +33,7 @@ const WhoWeAre = () => {
         >
           <img
             src="/who-we-are.jpg"
-            alt="A collage of runway models and brand logos"
+            alt="Collage of African runway models and fashion brand logos"
             className="w-full h-full object-top"
           />
         </motion.div>
@@ -39,22 +41,23 @@ const WhoWeAre = () => {
         {/* Text Block */}
         <div className="space-y-6">
           <p className="text-gray-700 leading-relaxed">
-            It started in 2017 with one bold mission: give African models a
-            global runway.
+            It started in 2017 with one bold mission: give African models a global runway.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            That spark became Exodus Models Africa — a movement that turned
-            vision into visibility.
+            That spark became Exodus Models Africa — a movement that turned vision into visibility.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Today, we’re evolving into Exodus Groups: a collective of power
-            tools, platforms, and products built for African brilliance.
+            Today, we’re evolving into Exodus Groups: a collective of power tools, platforms, and products built for African brilliance.
           </p>
           <p className="text-gray-700 leading-relaxed">
             From fashion to fintech. From creators to communities.
           </p>
 
-          <button className="cursor-pointer uppercase inline-block w-full sm:w-auto text-center px-8 py-4 border font-medium border-black hover:bg-black hover:text-white text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition">
+          <button
+            type="button"
+            className="cursor-pointer uppercase inline-block w-full sm:w-auto text-center px-8 py-4 border font-medium border-black hover:bg-black hover:text-white text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition"
+            aria-label="Learn more about Exodus"
+          >
             Learn More
           </button>
         </div>

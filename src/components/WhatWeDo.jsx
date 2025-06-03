@@ -108,7 +108,7 @@ const WhatWeDo = () => {
               y: 0,
               transition: { duration: 0.5, delay: 0.5 },
             }}
-            className="text-3xl font-bold font-primary flex items-center gap-2"
+            className="text-3xl font-bold text-center font-primary flex max-sm:flex-col items-center md:gap-2"
           >
             Exodus tips
             <span className="text-xs bg-black text-white px-2 py-1 uppercase">

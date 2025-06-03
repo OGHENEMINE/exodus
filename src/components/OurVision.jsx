@@ -19,8 +19,8 @@ const OurVision = () => {
       </div>
 
       {/* Vision Quote Content */}
-      <div className="max-w-2xl w-full mx-auto text-center">
-        <blockquote className="italic text-gray-700 text-2xl relative leading-10">
+      <div className="md:max-w-2xl w-full mx-auto text-center">
+        <blockquote className="italic text-gray-700 text-xl md:text-2xl relative leading-10">
           <p className="before:text-neutral-800 before:font-mono after:font-mono before:content-['“'] after:content-['”'] before:text-8xl">
             To tailor global opportunities for the African space — creatively,
             commercially, and culturally. We are not just joining the global
